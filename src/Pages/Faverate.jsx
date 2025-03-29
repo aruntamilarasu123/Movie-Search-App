@@ -1,22 +1,24 @@
 import React from "react";
 
-function Faverate({ faverate }) {
+function Faverate({ faverate, removeFromFaverate }) {
   return (
     <div className="px-20 flex flex-col justify-center items-center">
-      <div className="px-20 grid grid-cols-4 gap-4">
+      <div className="px-20 grid grid-cols-4 gap-4 rounded-lg movie-box">
         {faverate.map((data) => (
           <div
-            key={data.id}
-            className="p-2 text-[#CCFF00] flex flex-col gap-4 border-[#CCFF00] border rounded-lg"
+            key={data.imdbID}
+            className="p-2 text-[#ffffff] flex flex-col overflow-hidden rounded-lg movie-card content-between grid "
           >
             <div>
-              <img src={data.Poster} alt={data.Title} />
+              <img className="object-contain object-center w-full h-64" src={data.Poster} alt={data.Title} />
             </div>
-            <div className="flex justify-between">
-              <h1>{data.Title}</h1>
+            <div className="flex justify-between p-2">
+              <h1>{data.Title} ({data.Year})</h1>
             </div>
-            <div className="flex justify-between">
-              <button className="p-2 border bg-black border-[#CCFF00] w-32 rounded-lg flex justify-center items-center">
+            <div className="">
+              <button onClick={() => removeFromFaverate(data.imdbID)} 
+              className="cursor-pointer w-full flex justify-center items-center movie-btn text-black"
+              disabled={faverate.includes(data.imdbID)}>
                 Remove
               </button>
             </div>

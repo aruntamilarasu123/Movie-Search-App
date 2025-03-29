@@ -107,7 +107,104 @@
     font-style: italic;
   }
   .hero-sec{
-    background-image: url(./assets/3.jpg);
+    background-image: url(./assets/2.webp);
     background-size:cover;
     background-repeat: no-repeat;
+    padding: 15px;
+  }
+
+  .nav-btn{
+    color: #928d8d;
+    padding: 3px 10px;
+    border-radius: 5px;
+  }
+  .nav-btn:hover{
+    color:white;
+  }
+  .sign-btn{
+    background-color: #f7c600;
+    padding: 3px 20px;
+    border-radius: 5px;
+  }
+  .sign-btn:hover{
+    background-color: #f7ce2e;
+  }
+  .search-btn{
+    max-width: 100px;
+    background-color: #f7c600;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .search-btn:hover{
+    background-color: #f7ce2e;
+    
+  }
+  .navbor{
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.301); 
+  }
+  .hero-section{
+    margin-top: 130px;
+  }
+  .search-input{
+    background-color: rgba(53, 49, 49, 0.644);
+    padding: 5px;
+    border-radius: 50px;
+  }
+  .search-input-box{
+  color: white;
+  padding: 5px;
+  }
+  .search-input-box:focus{
+    outline: none;
+    border: none;
+  }
+  .search-btn-2{
+    background-color: #f7c600;
+    color:black;
+    padding: 0px 5px;
+    
+  }
+  .search-btn-2:hover{
+    cursor: pointer;
+    background-color:#f7ce2e;
+  }
+
+  .movie-card{
+    background-color: rgba(53, 49, 49, 0.644);
+    position: relative;
+  }
+  .movie-btn{
+    background-color: #f7c600;
+    border-radius: 5px;
+    padding: 7px;
+  }
+  .movie-btn:hover{
+    background-color: #f7ce2e;
+  }
+
+  .fav-btn{
+    right: 0;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+  }
+  .movie-card:hover .fav-btn{
+    display: block;
+  }
+  .selection-box{
+    background-color: rgba(53, 49, 49, 0.644);
+    height: 40px;
+    color: white;
+  }
+  .movie-details {
+    display: flex;
+    column-gap: 30px;
+    background-color: rgba(53, 49, 49, 0.644);
+  }
+  
+  .movie-detail-img {
+    width: 500px;
+    height: auto;
+    
   }
