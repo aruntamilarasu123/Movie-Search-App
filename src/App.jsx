@@ -40,16 +40,20 @@ function App() {
   };
 
   //HANDELED SEARCH BUTTON
-  const handelSearch = () => {
-    if (search.trim() !== "") {
-      setSearchResults(search);
-      setSearch("");
-    }
-  };
+    const handelSearch = () => {
+        if (search.trim() !== "") {
+            setSearchResults(search.trim());
+            setSearch("");
+        }
+    };
 
   //DATA FETCHED
   useEffect(() => {
-    const fetchData = async (searchResults) => {
+        const fetchData = async () => {
+            if (!searchResults.trim()) {
+                console.error("No search term provided.");
+                return;
+            }
       try {
         const response = await fetch(
           `http://www.omdbapi.com/?s=${searchResults}&type=${selectedType}&apikey=35e2c71e`
@@ -57,6 +61,8 @@ function App() {
         const result = await response.json();
         if (result.Search) {
           setMovies(result.Search);
+        } else {
+          alert("No movies found!");
         }
       } catch (error) {
         console.error("Error fetching data:", error);
