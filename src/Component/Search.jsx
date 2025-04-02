@@ -3,9 +3,9 @@ import React from 'react'
 function Search({handelInputChange, handelSearch, search,}) {
   return (
     <div className="text-[#CCFF00] flex flex-col poppins-regular">
-    <div className="flex justify-center mb-2 gap-4 search-input">
+    <div className="flex justify-center mb-2 gap-4 search-input max:-md:justify-normal">
       <input
-        className="search-input-box text-black rounded-lg w-90"
+        className="search-input-box text-black rounded-lg w-90 max-md:w-[70%]"
         type="search"
         value={search}
         onChange={handelInputChange}

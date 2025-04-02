@@ -10,11 +10,11 @@ function Moviecard({ loading, addToFaverate, faverate, currentItems}) {
       {loading ? (
         <div className="text-[#ffffff] text-3xl font-bold">Loading...</div>
       ) : (
-        <div className="px-20 grid grid-cols-4 gap-4 rounded-lg movie-box">
+        <div className="px-20 grid grid-cols-4 gap-4 rounded-lg movie-box max-md:grid-cols-1 max-md:px-0">
           {
             currentItems.map((data) => (
               <div key={data.imdbID}
-                className="p-2 text-[#ffffff] flex flex-col overflow-hidden rounded-lg movie-card content-between grid "
+                className="p-2 text-[#ffffff] flex flex-col overflow-hidden rounded-lg movie-card content-between grid"
               >
                 <div className="">
                   <img className="object-contain object-center w-full h-64" src={data.Poster} alt={data.Title} />

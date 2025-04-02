@@ -2,8 +2,8 @@ import React from "react";
 
 function Faverate({ faverate, removeFromFaverate }) {
   return (
-    <div className="px-20 flex flex-col justify-center items-center">
-      <div className="px-20 grid grid-cols-4 gap-4 rounded-lg movie-box">
+    <div className="px-20 flex flex-col justify-center items-center max-md:px-0">
+      <div className="px-20 grid grid-cols-4 gap-4 rounded-lg movie-box max-md:px-0 max-md:grid-cols-1">
         {faverate.map((data) => (
           <div
             key={data.imdbID}

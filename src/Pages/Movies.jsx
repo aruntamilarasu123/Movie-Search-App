@@ -4,7 +4,7 @@ import Paginetion from "../Component/Paginetion";
 
 function Movies({ loading, handelInputChange, handelSearch, search, addToFaverate, faverate, currentItems, handelPageChange, pageNumber, selectedType, handelTypeChange}) {
   return (
-    <div className="text-[#CCFF00] flex flex-col">
+    <div className="text-[#CCFF00] flex flex-col ">
       <div className="flex self-center">
       <Search 
         handelInputChange={handelInputChange}

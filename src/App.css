@@ -208,3 +208,19 @@
     height: auto;
     
   }
+
+  @media screen and (max-width: 480px) {
+    .hero-section{
+      margin-top: 10px;
+    }
+    .movie-details{
+      flex-direction: column;
+    }
+    .movie-detail-img{
+      width: 100%;
+    }
+    .hero-sec{
+      background-size:auto;
+    }
+  }
+

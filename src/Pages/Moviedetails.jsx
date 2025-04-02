@@ -33,8 +33,8 @@ function Moviedetails() {
     if (!movieDetails) return <div className="text-[#CCFF00]">No details available for this movie.</div>;
 
     return (
-        <div className="movie-details text-[#ffffff] px-20 py-8 relative">
-            <div  className="movie-detail-img">
+        <div className="movie-details text-[#ffffff] px-20 py-8 relative max-md:px-0">
+            <div  className="movie-detail-img max-md:flex max-md:justify-center">
                 <img src={movieDetails.Poster} alt={movieDetails.Title} />
             </div>
             <div className="poppins-regular flex flex-col gap-4">
