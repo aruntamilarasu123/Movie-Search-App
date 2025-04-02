@@ -54,7 +54,7 @@ function App() {
         setLoading(true);
         try {
           const response = await fetch(
-            `http://www.omdbapi.com/?s=${searchResults}&type=${selectedType}&apikey=35e2c71e`
+            `https://www.omdbapi.com/?s=${searchResults}&type=${selectedType}&apikey=35e2c71e`
           );
           const result = await response.json();
           if (result.Search) {
