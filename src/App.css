@@ -1,227 +1,253 @@
 @import "tailwindcss";
-.poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .poppins-light {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .poppins-extrabold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .poppins-black {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .poppins-thin-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .poppins-extralight-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .poppins-light-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .poppins-semibold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .poppins-bold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .poppins-extrabold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-  }
-  
-  .poppins-black-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  .hero-sec{
-    background-image: url(./assets/2.webp);
-    background-size:cover;
-    background-repeat: no-repeat;
-    padding: 15px;
-  }
 
-  .nav-btn{
-    color: #928d8d;
-    padding: 3px 10px;
-    border-radius: 5px;
-  }
-  .nav-btn:hover{
-    color:white;
-  }
-  .sign-btn{
-    background-color: #f7c600;
-    padding: 3px 20px;
-    border-radius: 5px;
-  }
-  .sign-btn:hover{
-    background-color: #f7ce2e;
-  }
-  .search-btn{
-    max-width: 100px;
-    background-color: #f7c600;
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
-  .search-btn:hover{
-    background-color: #f7ce2e;
-    
-  }
-  .navbor{
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.301); 
-  }
-  .hero-section{
-    margin-top: 130px;
-  }
-  .search-input{
-    background-color: rgba(53, 49, 49, 0.644);
-    padding: 5px;
-    border-radius: 50px;
-  }
-  .search-input-box{
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.hero-sec {
+  background-image: url(./assets/2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+
+.nav-btn {
+  color: #928d8d;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.nav-btn:hover {
+  color: white;
+}
+
+.sign-btn {
+  background-color: #f7c600;
+  padding: 3px 20px;
+  border-radius: 5px;
+}
+
+.sign-btn:hover {
+  background-color: #f7ce2e;
+}
+
+.search-btn {
+  max-width: 100px;
+  background-color: #f7c600;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.search-btn:hover {
+  background-color: #f7ce2e;
+
+}
+
+.navbor {
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.301);
+}
+
+.hero-section {
+  margin-top: 130px;
+}
+
+.search-input {
+  background-color: rgba(53, 49, 49, 0.644);
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.search-input-box {
   color: white;
   padding: 5px;
-  }
-  .search-input-box:focus{
-    outline: none;
-    border: none;
-  }
-  .search-btn-2{
-    background-color: #f7c600;
-    color:black;
-    padding: 0px 5px;
-    
-  }
-  .search-btn-2:hover{
-    cursor: pointer;
-    background-color:#f7ce2e;
+}
+
+.search-input-box:focus {
+  outline: none;
+  border: none;
+}
+
+.search-btn-2 {
+  background-color: #f7c600;
+  color: black;
+  padding: 0px 5px;
+
+}
+
+.search-btn-2:hover {
+  cursor: pointer;
+  background-color: #f7ce2e;
+}
+
+.movie-card {
+  background-color: rgba(53, 49, 49, 0.644);
+  position: relative;
+}
+
+.movie-btn {
+  background-color: #f7c600;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.movie-btn:hover {
+  background-color: #f7ce2e;
+}
+
+.fav-btn {
+  right: 0;
+  font-size: 30px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.fav-btn.hidden {
+  display: none;
+}
+
+.movie-card:hover .fav-btn {
+  display: block;
+}
+
+.selection-box {
+  background-color: rgba(53, 49, 49, 0.644);
+  height: 40px;
+  color: white;
+}
+
+.movie-details {
+  display: flex;
+  column-gap: 30px;
+  background-color: rgba(53, 49, 49, 0.644);
+}
+
+.movie-detail-img {
+  width: 500px;
+  height: auto;
+
+}
+
+
+@media screen and (max-width: 480px) {
+  .hero-section {
+    margin-top: 10px;
   }
 
-  .movie-card{
-    background-color: rgba(53, 49, 49, 0.644);
-    position: relative;
-  }
-  .movie-btn{
-    background-color: #f7c600;
-    border-radius: 5px;
-    padding: 7px;
-  }
-  .movie-btn:hover{
-    background-color: #f7ce2e;
-  }
-
-  .fav-btn{
-    right: 0;
-    font-size: 30px;
-    display: none;
-    cursor: pointer;
-  }
-  .movie-card:hover .fav-btn{
-    display: block;
-  }
-  .selection-box{
-    background-color: rgba(53, 49, 49, 0.644);
-    height: 40px;
-    color: white;
-  }
   .movie-details {
-    display: flex;
-    column-gap: 30px;
-    background-color: rgba(53, 49, 49, 0.644);
+    flex-direction: column;
   }
-  
+
   .movie-detail-img {
-    width: 500px;
-    height: auto;
-    
+    width: 100%;
   }
 
-  @media screen and (max-width: 480px) {
-    .hero-section{
-      margin-top: 10px;
-    }
-    .movie-details{
-      flex-direction: column;
-    }
-    .movie-detail-img{
-      width: 100%;
-    }
-    .hero-sec{
-      background-size:auto;
-      background-repeat: repeat-y;
-    }
+  .hero-sec {
+    background-size: auto;
+    background-repeat: repeat-y;
   }
-
+}

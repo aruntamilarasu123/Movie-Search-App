@@ -34,7 +34,7 @@ function Moviedetails() {
 
     return (
         <div className="movie-details text-[#ffffff] px-20 py-8 relative max-md:px-0">
-            <div  className="movie-detail-img max-md:flex max-md:justify-center">
+            <div className="movie-detail-img max-md:flex max-md:justify-center">
                 <img src={movieDetails.Poster} alt={movieDetails.Title} />
             </div>
             <div className="poppins-regular flex flex-col gap-4">
@@ -46,7 +46,7 @@ function Moviedetails() {
                 <p><strong className="poppins-bold text-xl">Rating:</strong> {movieDetails.imdbRating}</p>
             </div>
             <Link className="sign-btn absolute right-8 bottom-8 text-black poppins-bold" to="/Movies">
-            Back To Home 
+                Back To Home
             </Link>
         </div>
     )

@@ -3,6 +3,9 @@ import React from "react";
 function Faverate({ faverate, removeFromFaverate }) {
   return (
     <div className="px-20 flex flex-col justify-center items-center max-md:px-0">
+            {faverate.length === 0 ? (
+        <p className="text-white mt-36 text-3xl poppins-light">Favorite movies not available.</p>
+      ) : (
       <div className="px-20 grid grid-cols-4 gap-4 rounded-lg movie-box max-md:px-0 max-md:grid-cols-1">
         {faverate.map((data) => (
           <div
@@ -16,15 +19,16 @@ function Faverate({ faverate, removeFromFaverate }) {
               <h1>{data.Title} ({data.Year})</h1>
             </div>
             <div className="">
-              <button onClick={() => removeFromFaverate(data.imdbID)} 
-              className="cursor-pointer w-full flex justify-center items-center movie-btn text-black"
-              disabled={faverate.includes(data.imdbID)}>
+              <button onClick={() => removeFromFaverate(data.imdbID)}
+                className="cursor-pointer w-full flex justify-center items-center movie-btn text-black"
+                disabled={faverate.includes(data.imdbID)}>
                 Remove
               </button>
             </div>
           </div>
         ))}
       </div>
+      )}
     </div>
   );
 }

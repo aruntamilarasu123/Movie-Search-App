@@ -74,7 +74,11 @@ function App() {
 
   //ADD TO FAVERATE HANDELING
   const addToFaverate = (movies) => {
-    if (!faverate.some((favMovie) => favMovie.imdbID === movies.imdbID)) {
+    const isFavorite = faverate.some((favMovie) => favMovie.imdbID === movies.imdbID);
+    if (isFavorite) {
+      const updatedFaverate = faverate.filter((favMovie) => favMovie.imdbID !== movies.imdbID);
+      setFaverate(updatedFaverate);
+    } else {
       const newFaverate = [...faverate, movies];
       setFaverate(newFaverate);
     }
@@ -114,6 +118,7 @@ function App() {
               selectedType={selectedType}
               handelTypeChange={handelTypeChange}
               faverate={faverate}
+              currentpage={currentpage}
 
             />
           }

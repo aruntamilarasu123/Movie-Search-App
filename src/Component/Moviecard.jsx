@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router";
 import { CiHeart } from "react-icons/ci";
 
-function Moviecard({ loading, addToFaverate, faverate, currentItems}) {
+function Moviecard({ loading, addToFaverate, faverate, currentItems, }) {
 
 
   return (
     <div className="px-20 flex flex-col justify-center items-center max-md:px-0">
       {loading ? (
-        <div className="text-[#ffffff] text-3xl font-bold">Loading...</div>
+        <div className="text-[#ffffff] text-3xl poppins-light mt-36">Loading...</div>
       ) : (
         <div className="px-20 grid grid-cols-4 gap-4 rounded-lg movie-box max-md:grid-cols-1 max-md:px-0">
           {
@@ -29,13 +29,13 @@ function Moviecard({ loading, addToFaverate, faverate, currentItems}) {
                     </button>
                   </Link>
                 </div>
-                <button onClick={() => addToFaverate(data)} className="absolute fav-btn"
-                disabled={faverate.some((favMovie) => favMovie.imdbID === data.imdbID)}
-                 >
-                  <CiHeart className=""/>
-                  </button>
+                <button onClick={() => addToFaverate(data)}
+                  className={`absolute fav-btn ${faverate.some((favMovie) => favMovie.imdbID === data.imdbID) ? 'block' : 'hidden'}`}
+                  disabled={false}
+                >
+                  <CiHeart className={`${faverate.some((favMovie) => favMovie.imdbID === data.imdbID) ? 'bg-red-500' : 'bg-gray-500'} p-[3px] rounded-full`} />
+                </button>
               </div>
-
             ))
           }
         </div>
