@@ -6,7 +6,7 @@ function Moviecard({ loading, addToFaverate, faverate, currentItems}) {
 
 
   return (
-    <div className="px-20 flex flex-col justify-center items-center">
+    <div className="px-20 flex flex-col justify-center items-center max-md:px-0">
       {loading ? (
         <div className="text-[#ffffff] text-3xl font-bold">Loading...</div>
       ) : (
