@@ -40,44 +40,43 @@ function App() {
   };
 
   //HANDELED SEARCH BUTTON
-    const handelSearch = () => {
-        if (search.trim() !== "") {
-            setSearchResults(search.trim());
-            setSearch("");
-        }
-    };
+  const handelSearch = () => {
+    if (search.trim() !== "") {
+      setSearchResults(search.trim());
+      setSearch("");
+    }
+  };
 
   //DATA FETCHED
   useEffect(() => {
-        const fetchData = async () => {
-            if (!searchResults.trim()) {
-                console.error("No search term provided.");
-                return;
-            }
-      try {
-        const response = await fetch(
-          `http://www.omdbapi.com/?s=${searchResults}&type=${selectedType}&apikey=35e2c71e`
-        );
-        const result = await response.json();
-        if (result.Search) {
-          setMovies(result.Search);
-        } else {
-          alert("No movies found!");
+    if (searchResults) {
+      const fetchData = async () => {
+        setLoading(true);
+        try {
+          const response = await fetch(
+            `http://www.omdbapi.com/?s=${searchResults}&type=${selectedType}&apikey=35e2c71e`
+          );
+          const result = await response.json();
+          if (result.Search) {
+            setMovies(result.Search);
+          } else {
+            alert("No movies found!");
+          }
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        } finally {
+          setLoading(false);
         }
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchData(searchResults, selectedType);
+      };
+      fetchData();
+    }
   }, [searchResults, selectedType]);
 
   //ADD TO FAVERATE HANDELING
   const addToFaverate = (movies) => {
-    if(!faverate.some((favMovie)=> favMovie.imdbID === movies.imdbID)){
-    const newFaverate = [...faverate, movies];
-    setFaverate(newFaverate);
+    if (!faverate.some((favMovie) => favMovie.imdbID === movies.imdbID)) {
+      const newFaverate = [...faverate, movies];
+      setFaverate(newFaverate);
     }
   };
 
@@ -97,9 +96,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Faverate" element={<Faverate faverate={faverate} removeFromFaverate={removeFromFaverate} />} />
-        <Route 
-          path="/Movie/:imdbID" 
-          element={<Moviedetails/>}/>
+        <Route
+          path="/Movie/:imdbID"
+          element={<Moviedetails />} />
         <Route
           path="/Movies"
           element={
@@ -115,7 +114,7 @@ function App() {
               selectedType={selectedType}
               handelTypeChange={handelTypeChange}
               faverate={faverate}
-             
+
             />
           }
         />
