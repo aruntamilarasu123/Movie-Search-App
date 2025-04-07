@@ -11,7 +11,7 @@ function App() {
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState("");
   const [loading, setLoading] = useState(true);
-  const [movies, setMovies] = useState([]);//INITIAL STATE
+  const [movies, setMovies] = useState([]);
   const [faverate, setFaverate] = useState([]);
   const [currentpage, setCurrentpage] = useState(1);
   const [selectedType, setSelectedType] = useState("");
